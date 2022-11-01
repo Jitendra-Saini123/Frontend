@@ -1,0 +1,40 @@
+*{
+    padding:0;
+    margin:0;
+}
+#master{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    margin:30px;
+}
+#head{
+    display:flex;
+    
+    
+}
+#menu{
+    display:flex;
+}
+#head h4{
+    padding:0 10px;
+}
+#menu h4{
+    padding:10px;
+    margin-right:20px;
+}
+#logo h1{
+    padding:0 50px;
+}
+#img img{
+  height:100%;
+  width:100%;
+  background-size: cover;
+}
+#head h4 a{
+    text-decoration: none;
+}
+#menu h4 a{
+    text-decoration: none;
+}

@@ -1,0 +1,39 @@
+#master{
+    display: flex;
+    flex-wrap: wrap;
+    width:80%;
+    margin:0 auto;
+}
+#master .image{
+    width:30%;
+    height:200px;
+    margin:1px;
+    overflow:hidden;
+    position: relative;
+}
+#master .image img{
+    width:100%;
+    height:100%;
+    z-index:1;
+}
+#master .image:hover img{
+    transform: scale(2);
+}
+#master .image:before{
+    content:'Jitendra';
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: rgba(0,0,0,0.5);
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:-100%;
+    z-index:2;
+    transition: left 1s;
+}
+#master .image:hover:before{
+    left:0;
+}

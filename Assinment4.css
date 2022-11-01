@@ -1,0 +1,118 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: rgb(224, 64, 216);
+}
+#master{
+    display: flex;
+    flex-wrap: wrap;
+    width:70%;
+    height:200px;
+    margin:40px auto;
+    background-color: white;
+}
+#master .part{
+    width:49%;
+    border:1px solid black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding:0.5rem 1.5rem;
+    border:none;
+    border-radius:20%;
+}
+#btn1{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+#btn1::before{
+    content:'';
+    background-color: red;
+    position: absolute;
+    width:50%;
+    height:100%;
+    top:0;
+    left:-100%;
+    transition: left 1s;
+    z-index: -1;
+}
+#btn1:hover::before{
+    left:0;
+}
+#btn1::after{
+    content:'';
+    position: absolute;
+    background-color: royalblue;
+    width:50%;
+    height:100%;
+    top:0;
+    right:-100%;
+    transition: right 1s;
+    z-index:-1;
+}
+#btn1:hover::after{
+    right:0;
+}
+#btn2{
+    position: relative;
+    overflow: hidden;
+    z-index:1;
+}
+#btn2::after{
+    content:'';
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: saddlebrown;
+    left:0;
+    bottom:-100%;
+    transition: bottom 1s;
+    z-index:-1;
+}
+#btn2:hover::after{
+    bottom: 0;
+}
+#btn3{
+    position: relative;
+    overflow: hidden;
+    z-index:1;
+}
+#btn3::after{
+    content:'';
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: rgb(19, 139, 123);
+    left:0;
+    bottom:100%;
+    transition: bottom 1s;
+    z-index:-1;
+}
+#btn3:hover::after{
+    bottom: 0;
+}
+#btn4{
+    position: relative;
+    overflow: hidden;
+    z-index:1;
+}
+#btn4::after{
+    content:'';
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: rgb(83, 88, 150);
+    left:0;
+    bottom:100;
+    transition: bottom 1s;
+    z-index:-1;
+}
+#btn4:hover::after{
+    bottom: 0;
+}

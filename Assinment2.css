@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+}
+.shortimage{
+    width:80px;
+    position: absolute;
+    left: 300px;
+}
+.bigimage{
+    width:400px;
+}
+img{
+    border-radius: 50%;
+}
+#photos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+.image{
+    margin:0 0.75rem;
+    position: relative;
+}
